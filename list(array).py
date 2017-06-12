@@ -44,7 +44,10 @@
  for i,j in zip([1,2,3],[4,5]):
  print i,j #1 4
            #2 5
-           #it will display the same numbers of elements depending on the shortest array 
+           #it will display the same numbers of elements depending on the shortest array
+sum([1,2,3]) # 6 python has built_in function call sum
+sum(["a","b"]) # "ab" join str
+
 
 
 
