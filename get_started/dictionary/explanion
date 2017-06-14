@@ -1,0 +1,31 @@
+dictionary in python = object in js
+x={"a":1,"c":343,(1,2):44,"name":"roro"}
+functions:
+1. x["a"]  // 1
+  x[(1,2)] // 44
+
+2. del x["a"] // x={"c":343,(1,2):44,"name":"roro"}  function delete
+  
+3. x.keys()  // ["c",(1,2),"name"] function to give all the keys
+
+4. x.values() //[343,44,"roro"] function to give all the values
+
+5. x.items() //[("c",343),((1,2),44),("name","roro")] to give all the keys with his values in paires 
+
+6.for key in x: for loop for all the keys
+
+7.for value in x: for loop for all the values
+
+8.for key,value in x.items(): for loop for all keys and values 
+
+9. x.has_key('c') // True
+
+10. x.get("c",5) // 343 it will return the value of the key
+
+11. x.get("b",7) // 7 coz "b" is not in x
+
+12. x.setdefult("p",3) //{"c":343,(1,2):44,"name":"roro","p":3}
+
+13. "how many %(c)d" //how many 343
+
+14. "how are you %(name)s do you have %(p)d JD" // how are you roro do you have 3 JD
