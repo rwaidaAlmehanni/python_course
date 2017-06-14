@@ -1,26 +1,21 @@
 #Improve the above program to print the words in the descending order of the number of occurrences.
+import sys
 
-def word_frequency(words):
-    """Returns frequency of each word given a list of words.
 
-        >>> word_frequency(['a', 'b', 'a'])
-        {'a': 2, 'b': 1}
-    """
-    frequency = {}
-    for w in words:
-        frequency[w] = frequency.get(w, 0) + 1
-    return frequency
-def read_words(filename):
-    return open(filename).read().split()
+# def word_frequency(words):
+#     frequency = {}
+#     for w in words:
+#         frequency[w] = frequency.get(w, 0) + 1
+#     print frequency
+import sys
+def test(words): # return factorial
+ x=[]
+ f={}
+ for w in words:
+     f[w] = f.get(w, 0) + 1
+ for word, count in f.items():
+     x.append((word,count))
+     x.sort()
+ print x
 
-def main(filename):
-	x=[]
-    frequency = word_frequency(read_words(filename))
-    for word, count in frequency.items():
-    	x.append((word,count))
-    	x.sort()
-        print word, count
-
-if __name__ == "__main__":
-    import sys
-    main(sys.argv[1])
+test(open(sys.argv[1]).read().split())
