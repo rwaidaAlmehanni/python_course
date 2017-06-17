@@ -17,7 +17,7 @@ def readDirFiles():
   x=listdir(sys.argv[1])
   for i in x:
   	if str(i).index(".")!=0:
-      f.appenf(readFileLines(i))		 
+      f.append(readFileLines(i))		 
   print f
 
 readDirFiles()
