@@ -4,9 +4,15 @@ import sys
 from os import listdir
 def readLineChar():
   f={}
+  counter=0;
   x=listdir(sys.argv[1])
   for i in x:
-  	f[i]=len(open(i).readlines())
+  	if str(i).index(".")!=[0]:
+  		for j in open(i).readlines():
+  			if j!=" " and j[0]!="#":
+  				counter+=1;
+        f[str(i)]=counter;
+        counter=0;        
   print f
 
 readLineChar()
