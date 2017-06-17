@@ -13,3 +13,9 @@ class yrang:
     		return i
     	else:
     		raise StopItration()
+
+y=yrang(5)
+y.next()
+y.next()
+y.next()
+
