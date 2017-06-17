@@ -20,5 +20,5 @@ def readDirFiles():
       f.appenf(readFileLines(i))		 
   print f
 
-readFileLines()
+readDirFiles()
 
